@@ -7,9 +7,9 @@ let table = document.getElementById('salmon');
 let form=document.getElementById('shopeForm');
 let parent=document.getElementById('salmon');
 console.log(parent);
-let imageElement =document.createElement('img');
-parent.appendChild(imageElement);
-imageElement.setAttribute('src','../images/salmon.png');
+//let imageElement =document.createElement('img');
+//parent.appendChild(imageElement);
+//imageElement.setAttribute('src','../images/salmon.png');
 
 function CookieShop(location, minCust, maxCust, avrageCookiesSale) {
 

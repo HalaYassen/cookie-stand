@@ -1,116 +1,136 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+  }
+  h1, h2, p {
+    color: white;
+    font-family: 'Zilla Slab Highlight', cursive;
+  }
+  h1 {
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Zilla Slab Highlight', cursive;
 }
-
-body{
-    display: block;
-    font-family: Arial;
-    padding: 10px;
-    background-color: #f1b6b6;
-}
-
-header{
     
-    text-align: center;
-    
-}
+div {
 
-header h1{
-    margin: 30px 50px;
-    font-size: 50px;
-    color: rgb(250, 146, 9);
-}
+        display: block;
+      }
 
-nav{
-    margin-top: 20px;
-    background-color: rgb(80, 79, 79);
-    margin-bottom: 20px;
-}
-nav ul{
-    position:relative;
-}
-nav ul li{
-    display: inline-block;
-    padding: 20px;
-}
+      header.home {
+        background-attachment: fixed;
+        background-image: url(../images/corner.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px -13px 35px 14px rgb(177, 210, 248);
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+        width: 200vmax;
+      }
+      header.home::before {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        bottom:0;
+        right: 0;
+        left: 0;
+        width: 100%;
+      }
+      header.top-head {
+        background: black;
+        box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.2);
+        position:fixed;
+        top:0;
+        left:0;
+        width:100vw;
+        
+      }
+      nav.top {
+        text-align: left;
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 5px;
+        margin-top: 15px;
+        position: relative;
+        font-family:sans-serif;
+        font-size:20px;
+        width: 98vw;
+        height: 50px;
+      }
+      nav.top a {
+        color: white;
+        text-decoration: none;
+        padding-left:5px;
+      }
+      nav.top li {
+       
+        display: inline;
+        position: relative;
+      }
+      nav.top li:hover {
+        background: rgb(240, 228, 123);
+      }
+      nav.top li::before {
+        position: absolute;
+        top:4px;
+        left:0;
+        bottom:0;
+        border-left: solid 5px white;
+        height: 80%;
+      }
+      div.pos-container {
+        position: absolute;
+        left: 0;
+        width: 50vw;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+      div.pos-container {
+        bottom:0;  
+      }
+      img.pos-logo {
+        width:100px;
+        vertical-align: middle;
+        transition: all ease-in-out 3s;
+      }
+      img.pos-logo:hover {
+        transform:rotate3d(0, 1, 0.5, 3.142rad);
+      
+      }
+      div.pos-text{
+        display:inline-block;
+        vertical-align: middle;
+      }
+      div.pos-text h1 {
+        font-size: 50px;
+        font-family: 'Zilla Slab Highlight', cursive;
+      }
+      div.pos-text h2 {
+        font-size: 30px;
+        font-family: 'Zilla Slab Highlight', cursive;
+      }
 
+      .pos1-text{
+        margin-left: 50px;
+        text-align:left;
+      }
+      .pos1-about h3 {
+        font-size: 50px;
+        text-align:center;
+        box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.2);
+        font-family: 'Zilla Slab Highlight', cursive;
 
-nav ul li a{
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: cursive;
-}
-
-#left{
-    float: left;
-    width: 50%;
-}
-
-#right{
-    float: right;
-    width: 45%;
-    background-color: #f1f1f1;
-}
-
-.c{
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.c h2{font-size: 40px;}
-.c p{font-size: 30px; color: brown; font-style: italic;}
-
-.p{
-    width: 100%;
-}
-
-footer p{
-    clear: both;
-    padding: 20px;
-    text-align: center;
-    background-color: #ddd;
-    margin-top: 20px;
-}
-
-p{
-    font-weight: bold;
-    /* justify-content: left;
-     */
-     text-align: justify;
-}
-
-
-legend {
-    color: rgb(250, 152, 4);
-    font-size: 50px;
-    text-align:left;
-    font-family:fantasy;
-  }
-  
-  fieldset {
-    border: solid 5px rgb(8, 8, 8);
-    margin: auto;
-    width: 50%;
-    align-content:center;
-  }
-  form {
-    margin-top: 50px;
-    padding-bottom: 20px;
-    width:100%;
-    float: left;
-  }
-  label {
-    display: block;
-    font: size 30px;
-    font-weight: bolder;
-    font-family:sans-serif;
-    color: rgb(101, 143, 23);
-  }
-  label, input {
-    margin:10px;
-  }
-  button {
-    margin: 0 auto;
-  }
+      }
+      .pos1-about p{
+        font-family:'Times New Roman';
+        color: darkgoldenrod;
+        font-size: large;
+      }
+      

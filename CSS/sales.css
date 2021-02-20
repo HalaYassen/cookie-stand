@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(245, 240, 201);
+}
+
+th{
+   border: solid 3px black;
+   font-size: 20px;
+   color:palevioletred;
+   background-color: peachpuff;
+}
+
+td{
+   border: solid 3px black;
+   color: orangered;
+   font-size: 20px;
+   background-color: peachpuff;
+}
+th:hover{
+  border: 4px solid rgb(6, 108, 241);
+  color: rgb(6, 199, 247);
+}
+tr:hover td {
+  border: 4px solid #a0a856;
+}
+
+fieldset {
+    border: solid 5px rgb(118, 96, 243);
+    margin: auto;
+    width: 50%;
+    align-content:center;
+  }
+  form {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    width:100%;
+    text-align: center;
+  }
+  legend {
+    color: rgb(241, 148, 9);
+    font-size: 50px;
+    text-align:center;
+    
+  }
+  label {
+    display: block;
+    font: size 30px;
+    font-weight: bolder;
+    font-family:sans-serif;
+    color: rgb(101, 143, 23);
+  }
+  label, input {
+    margin:10px;
+  }
+  button {
+    margin: 30px;
+
+  }
